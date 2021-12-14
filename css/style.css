@@ -1,0 +1,290 @@
+/* --リセットCSS-- */
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+table {
+border-collapse: collapse;
+font-family: inherit;
+}
+h1,h2,h3,h4,h5 {
+font-size: 100%;
+font-weight: normal;
+line-height: 1;
+}
+input,textarea,select {
+font-family: inherit;
+font-size: 16px;
+}
+input[type="button"],input[type="text"],input[type="submit"] {
+-webkit-appearance: none;
+border-radius: 0;
+}
+textarea {
+resize: none;
+-webkit-appearance: none;
+border-radius: 0;
+}
+th,td {
+border-collapse: collapse;
+}
+table th,table td {
+white-space: nowrap;
+}
+ul,ol {
+list-style-type: none;
+}
+img {
+vertical-align: text-bottom;
+vertical-align: -webkit-baseline-middle;
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+/* ボディー */
+body {
+  width: 100%;
+  height: auto;
+}
+/* ヘッダー */
+header {
+  background: center/cover url(../img/header.png);
+  width: 100%;
+  height: 620px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1#header-title {
+  font-size: 36px;
+  height: 62px;
+  line-height: 62px;
+}
+
+
+
+.sp-menu #open {
+  font-size: 36px;
+  line-height: 62px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  color: #000;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 63px;
+  right: 360px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  width: 488px;
+  height: 108px;
+  text-align: center;
+  line-height: 108px;
+  margin: 0 auto;
+  
+}
+
+
+h2#main-top-title {
+  width: 258px;
+  height: 120px;
+  font-size: 120px;
+  margin: auto ;
+  padding-top: 136px;
+}
+
+p#main-bottom-title {
+  width: 144px;
+  height: 16px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 16px;
+}
+/* メイン */
+
+h2.main-title {
+  width: auto;
+  height: 51px;
+  margin-top: 80px;
+  margin-bottom: 57px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 51px;
+  text-align: center;
+}
+
+
+p.main-text {
+  width: 576px;
+  height: 70px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto 40px;
+  color: #2b2b2b;
+}
+
+#conceput-image {
+  width: 960px;
+  height: 400px;
+  margin-bottom: 182px;
+}
+
+div.work-type {
+  display: flex;
+}
+
+h3.work-type-title {
+  font-weight: bold;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+}
+
+p.work-type-text {
+  font-size: 16px;
+}
+
+div.left {
+  margin-right: 120px;
+}
+
+li.left-top {
+  margin-bottom: 80px;
+}
+
+li.left-bottom {
+  margin-bottom: 200px;
+}
+
+div.right {
+  margin-top: 120px;
+}
+
+li.right-top {
+  margin-bottom: 80px;
+}
+
+li.right-bottom {
+  margin-bottom: 100px;
+}
+
+ul#florist {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul#florist li {
+  padding-bottom: 40px;
+}
+
+div#shop-information {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+table {
+  width: 432px;
+  height: 320px;
+  font-size: 16px;
+  margin-left: 48px;
+}
+
+th {
+  font-weight: normal;
+}
+
+.contact-wrapper {
+  background: center/cover url(../img/contact_us.png);
+  width: 100%;
+  height: 450px;
+}
+
+.contact-wrapper .content-wrapper {
+  padding-top: 40px;
+}
+
+button {
+  display: block;
+  width: 360px;
+  height: 80px;
+  background-color: #fff;
+  font-size: 20px;
+  border: 1px solid #A0A0A0;
+  margin: 0 auto;
+}
+
+
+/* フッター */
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #2b2b2b;
+}
